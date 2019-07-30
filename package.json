@@ -4,26 +4,14 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start -p $PORT",
-		"heroku-postbuild": "npm run build",
+		"start": "node index.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/miguelpc94/hkt-tech-test.git"
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/miguelpc94/hkt-tech-test/issues"
-	},
-	"homepage": "https://github.com/miguelpc94/hkt-tech-test#readme",
+	"license": "MIT",
 	"dependencies": {
-		"next": "^9.0.2",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
+		"dotenv": "^8.0.0",
+		"express": "^4.17.1"
 	}
 }
