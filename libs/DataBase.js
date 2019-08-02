@@ -1,3 +1,7 @@
+// *
+// * MOCKUP DATABASE
+// *
+
 let data = {
 	packages: {
 		lastId: 4,
