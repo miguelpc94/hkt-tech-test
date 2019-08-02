@@ -41,11 +41,12 @@ function useClienteContext() {
 		return false;
 	};
 
-	let login = (username, password) =>
+	let login = (username, password, callback) =>
 		auth.login(username, password, isAuthenticated => {
 			if (isAuthenticated) {
 				userDataDispatch({ username, isAuthenticated, type: "login" });
 			}
+			callback(isAuthenticated);
 		});
 
 	let logoff = () => {
